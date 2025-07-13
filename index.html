@@ -21,83 +21,6 @@
         font-family: Arial, sans-serif;
         z-index: 100;
       }
-      .spinner {
-        font-size: 28px;
-        position: relative;
-        display: inline-block;
-        width: 1em;
-        height: 1em;
-      }
-      .spinner.center {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-        z-index: 9999;
-      }
-      .spinner .spinner-blade {
-        position: absolute;
-        left: 0.4629em;
-        bottom: 0;
-        width: 0.074em;
-        height: 0.2777em;
-        border-radius: 0.0555em;
-        background-color: transparent;
-        transform-origin: center -0.2222em;
-        animation: spinner-fade9234 1s infinite linear;
-      }
-      .spinner .spinner-blade:nth-child(n) {
-        transform: rotate(calc(var(--i) * 30deg));
-        animation-delay: calc(var(--i) * 0.083s);
-      }
-      .spinner .spinner-blade:nth-child(1) {
-        --i: 0;
-      }
-      .spinner .spinner-blade:nth-child(2) {
-        --i: 1;
-      }
-      .spinner .spinner-blade:nth-child(3) {
-        --i: 2;
-      }
-      .spinner .spinner-blade:nth-child(4) {
-        --i: 3;
-      }
-      .spinner .spinner-blade:nth-child(5) {
-        --i: 4;
-      }
-      .spinner .spinner-blade:nth-child(6) {
-        --i: 5;
-      }
-      .spinner .spinner-blade:nth-child(7) {
-        --i: 6;
-      }
-      .spinner .spinner-blade:nth-child(8) {
-        --i: 7;
-      }
-      .spinner .spinner-blade:nth-child(9) {
-        --i: 8;
-      }
-      .spinner .spinner-blade:nth-child(10) {
-        --i: 9;
-      }
-      .spinner .spinner-blade:nth-child(11) {
-        --i: 10;
-      }
-      .spinner .spinner-blade:nth-child(12) {
-        --i: 11;
-      }
-
-      @keyframes spinner-fade9234 {
-        0% {
-          background-color: #69717d;
-        }
-        100% {
-          background-color: transparent;
-        }
-      }
-
       .planet-control {
         margin-bottom: 5px;
       }
@@ -108,22 +31,7 @@
     </style>
   </head>
   <body>
-    <div class="spinner center" id="loader">
-      <div class="spinner-blade"></div>
-      <div class="spinner-blade"></div>
-      <div class="spinner-blade"></div>
-      <div class="spinner-blade"></div>
-      <div class="spinner-blade"></div>
-      <div class="spinner-blade"></div>
-      <div class="spinner-blade"></div>
-      <div class="spinner-blade"></div>
-      <div class="spinner-blade"></div>
-      <div class="spinner-blade"></div>
-      <div class="spinner-blade"></div>
-      <div class="spinner-blade"></div>
-    </div>
-
-    <div id="info-panel" style="display: none">
+    <div id="info-panel">
       <h3>Planet Speed Control</h3>
     </div>
     <script type="module" src="main.js"></script>

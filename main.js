@@ -281,31 +281,31 @@ pauseBtn.addEventListener("click", () => {
   else cancelAnimationFrame(animationFrameId);
 });
 
-// // Dark/Light Toggle
-// const toggleBtn = document.createElement("button");
-// toggleBtn.textContent = "Toggle Dark/Light Mode";
-// Object.assign(toggleBtn.style, {
-//   position: "absolute",
-//   top: "50px",
-//   right: "10px",
-//   padding: "10px",
-//   backgroundColor: "rgba(255, 255, 255, 0.8)",
-//   color: "black",
-//   border: "none",
-//   borderRadius: "5px",
-//   cursor: "pointer",
-//   fontFamily: "Arial",
-// });
-// document.body.appendChild(toggleBtn);
+// Dark/Light Toggle
+const toggleBtn = document.createElement("button");
+toggleBtn.textContent = "Toggle Dark/Light Mode";
+Object.assign(toggleBtn.style, {
+  position: "absolute",
+  top: "50px",
+  right: "10px",
+  padding: "10px",
+  backgroundColor: "rgba(255, 255, 255, 0.8)",
+  color: "black",
+  border: "none",
+  borderRadius: "5px",
+  cursor: "pointer",
+  fontFamily: "Arial",
+});
+document.body.appendChild(toggleBtn);
 
-// toggleBtn.addEventListener("click", () => {
-//   isDarkMode = !isDarkMode;
-//   document.body.style.backgroundColor = isDarkMode ? "black" : "white";
-//   tooltip.style.background = isDarkMode
-//     ? "rgba(0,0,0,0.8)"
-//     : "rgba(255,255,255,0.9)";
-//   tooltip.style.color = isDarkMode ? "white" : "black";
-// });
+toggleBtn.addEventListener("click", () => {
+  isDarkMode = !isDarkMode;
+  document.body.style.backgroundColor = isDarkMode ? "black" : "white";
+  tooltip.style.background = isDarkMode
+    ? "rgba(0,0,0,0.8)"
+    : "rgba(255,255,255,0.9)";
+  tooltip.style.color = isDarkMode ? "white" : "black";
+});
 
 // Hover Labels
 window.addEventListener("mousemove", (e) => {
